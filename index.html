@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+   <!--Favicon-->
+   <link rel="shortcut icon" href="picture/favicon.ico" type="image/x-icon">
+	<!--Font Awesome-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+   <!--Google Font-->
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+   <!--Bootstrap-->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+   <!--Menu/Navbar-->
+   <link rel="stylesheet" href="css/nav.css" />
+   <!--App Style-->
+   <link rel="stylesheet" href="css/style.css" />
+   <title>Band</title>
+ </head>
+ <body>
+ <div class="full-website">
+ <!--Navbar start-->
+<nav class="sticky-top">
+  <ul class="menu">
+    <li class="logo"><a href="#home">Logo</a></li>
+    <li class="item"><a href="#home">Home</a></li>
+    <li class="item"><a href="#band">Band</a></li>
+    <li class="item"><a href="#tour">Tour</a></li>
+    <li class="item"><a href="#contact">Contact</a></li>
+	<li class="item has-submenu">
+      <a tabindex="0">More</a>
+      <ul class="submenu">
+        <li class="subitem"><a href="#">Marchandise</a></li>
+        <li class="subitem"><a href="#">Extras</a></li>
+        <li class="subitem"><a href="#">Media</a></li>
+      </ul>
+    </li>
+	<!--Modal login-->
+    <li class="item button"><a href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Buy Ticket</a></li>
+    <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+  </ul>
+</nav>
+<!--Navbar end-->
+
+<!--Login modal form start-->
+
+<div id="id01" class="modal">
+  <form class="modal-content animate loginmodal" action="/action_page.php" method="post">
+	<div class="imgcontainer">
+	  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+	  <h3>Ticket</h3>
+	</div>
+	<div class="container">
+	  <label for="number">Ticket, $15 per person</label>
+	  <input type="number" placeholder="How many?" name="number" id="number" required>
+	  <label for="email">Email</label>
+	  <input type="Email" placeholder="Enter email" name="email" id="email" required>
+	  <button type="submit">Pay</button>
+	</div>
+
+	<div class="container" style="background-color:#f1f1f1">
+	  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+	</div>
+  </form>
+</div>
+<!--login modal form end-->
+<!--Slide start-->
+<section class="slide-part" id="home">
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="picture/01b.jpg" style="width:100%">
+  <div class="text">
+	<h1 class="text-white my-3">New York</h1>
+	<p class="text-white my-3">The atmosphere in New York is lorem ipsum.</p>
+  </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="picture/04b.jpg" style="width:100%">
+  <div class="text">
+	<h1 class="text-white my-3">Chicago</h1>
+	<p class="text-white my-3">Thank you, Chicago - A night we won't forget.</p>
+  </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="picture/03b.jpg" style="width:100%">
+  <div class="text">
+	<h1 class="text-white my-3">Los Angeles</h1>
+	<p class="text-white my-3">We had the best time playing at Venice Beach!</p>
+  </div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+</section>
+<!--Slide end-->
+
+<!--Band start-->
+<section class="band-part py-3" id="band">
+<div class="container">
+	<div class="row">
+		<div class="default-heading text-center">
+			<h1>The Band</h1>
+			<p><i>We love music</i></p>
+			<span></span>
+		</div>
+		<div class="col-md-12">
+			<div class="band-content">
+				<p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="artist-content d-flex">
+				<div class="artist-item text-center">
+					<p class="text-xl">Name</p>
+					<img src="picture/bandmember.jpg" alt="Not Available">
+				</div>
+				<div class="artist-item text-center">
+					<p class="text-xl">Name</p>
+					<img src="picture/bandmember.jpg" alt="Not Available">
+				</div>
+				<div class="artist-item text-center">
+					<p class="text-xl">Name</p>
+					<img src="picture/bandmember.jpg" alt="Not Available">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+<!--Band end-->
+<!--Tour start-->
+<section class="bg-light py-5" id="tour">
+<div class="default-heading text-center">
+	<h1>TOUR DATES</h1>
+	<p><i>Remember to book your tickets!</i></p>
+	<span></span>
+</div>
+<section class="tour-part py-3">
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="tour-chart">
+				<table class="table text-white">
+				  <thead>
+					<tr>
+					  <th scope="col">Month</th>
+					  <th scope="col">Status</th>
+					  <th scope="col">QTY</th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr>
+					  <th scope="row">October</th>
+					  <td><span class="badge rounded-pill text-bg-danger">Sold Out</span></td>
+					  <td>0</td>
+					</tr>
+					<tr>
+					  <th scope="row">November</th>
+					  <td><span class="badge rounded-pill text-bg-danger">Sold Out</span></td>
+					  <td>0</td>
+					</tr>
+					<tr>
+					  <th scope="row">December</th>
+					  <td>Available</td>
+					  <td>3</td>
+					</tr>
+				  </tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<div class="tour-item">				
+				<img src="picture/newyork.jpg" alt="Not Available">
+				<div class="t-item-content">
+					<h3>New York</h3>
+					<span class="text-md">Fri 27 Nov 2022</span>
+					<p class="text-md">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+					<a onclick="document.getElementById('id01').style.display='block'">Buy Ticket</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="tour-item">				
+				<img src="picture/paris.jpg" alt="Not Available">
+				<div class="t-item-content">
+					<h3>Paris</h3>
+					<span class="text-md">Fri 28 Nov 2022</span>
+					<p class="text-md">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+					<a onclick="document.getElementById('id01').style.display='block'">Buy Ticket</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="tour-item">				
+				<img src="picture/sanfran.jpg" alt="Not Available">
+				<div class="t-item-content">
+					<h3>San Francisco</h3>
+					<span class="text-md">Fri 29 Nov 2022</span>
+					<p class="text-md">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+					<a onclick="document.getElementById('id01').style.display='block'">Buy Ticket</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+</section>
+<!--Tour end-->
+<!--Contact start-->
+<section class="contact-part py-3" id="contact">
+<div class="container">
+	<div class="row justify-content-center align-items-center">
+		<div class="default-heading text-center">
+			<h1>Contact</h1>
+			<p><i>Fan? Drop a note!</i></p>
+			<span></span>
+		</div>
+		<div class="col-md-6">
+			<div class="contact-content">
+				<p><i class="fa fa-map-marker" aria-hidden="true"></i>Chicago, US</p>
+				<p><i class="fa fa-phone" aria-hidden="true"></i>Phone: +00 191919</p>
+				<p><i class="fa fa-envelope" aria-hidden="true"></i>Email: mail@mail.com</p>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="contact-form">
+				<form >
+					<input type="text" class="form-control" placeholder="Enter name" name="name">
+					<input type="email" class="form-control" placeholder="Enter email" name="name">
+					<textarea class="form-control" placeholder="Enter message" name="name"></textarea>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+<!--Contact end-->
+<!--Footer start-->
+<section class="footer-part py-2">
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="text-center">
+				<span><i class="fa fa-facebook-square" aria-hidden="true"></i></span>
+				<span><i class="fa fa-instagram" aria-hidden="true"></i></span>
+				<span><i class="fa fa-twitter" aria-hidden="true"></i></span>
+				<span><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+				<p>Powered by <a href="#">Jane & John</a></p>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+<!--Footer end-->
+</div>
+<!--Bootstrap-->
+<script src="js/bootstrap.bundle.min.js"></script>
+<!--Menu/Navbar-->
+<script src="js/navbar.js"></script>
+<!--Custom Js-->
+<script src="js/script.js"></script>
+ </body>
+</html>
